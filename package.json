@@ -4,10 +4,10 @@
   "description": "A beautiful restaurant menu with categories and pricing",
   "main": "index.js",
   "scripts": {
-    "start": "../Menu/node_modules/.bin/react-scripts start",
-    "build": "../Menu/node_modules/.bin/react-scripts build",
-    "test": "../Menu/node_modules/.bin/react-scripts test",
-    "eject": "../Menu/node_modules/.bin/react-scripts eject"
+    "start": "node_modules/.bin/react-scripts start",
+    "build": "node_modules/.bin/react-scripts build",
+    "test": "node_modules/.bin/react-scripts test",
+    "eject": "node_modules/.bin/react-scripts eject"
   },
   "dependencies": {
     "react": "^18.2.0",
