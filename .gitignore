@@ -1,2 +1,6 @@
 /node_modules/
 /build/
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/res-menu.iml
+/.idea/vcs.xml

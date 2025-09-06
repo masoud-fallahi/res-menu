@@ -1,0 +1,24 @@
+import React from "react";
+import RestaurantHeader from "./components/restaurant-header";
+import MenuCategory from "./components/menu-category";
+import { menuData } from "./data/menu-data";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      <RestaurantHeader />
+      <main className="menu-container">
+        {menuData.categories.map((category) => (
+          <MenuCategory key={category.id} category={category} />
+        ))}
+      </main>
+      <footer className="restaurant-footer">
+        <p>رستوران سنتی ایرانی - تمامی حقوق محفوظ است</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
+
