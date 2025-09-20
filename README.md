@@ -1,79 +1,83 @@
-# منوی رستوران سنتی ایرانی
+# Turkish Restaurant Menu
 
-یک صفحه منوی رستوران زیبا و مدرن با دسته‌بندی کامل غذاها، نوشیدنی‌ها و پیش‌غذاها.
+A beautiful and modern restaurant menu page with complete categorization of main dishes, drinks, and appetizers featuring authentic Turkish cuisine.
 
-## ویژگی‌ها
+## Features
 
-- 🍽️ **دسته‌بندی کامل**: غذاهای اصلی، نوشیدنی‌ها، و پیش‌غذاها
-- 🖼️ **عکس‌های زیبا**: هر آیتم منو دارای عکس جذاب
-- 💰 **قیمت‌گذاری**: نمایش قیمت‌ها به صورت فرمت شده
-- 📝 **توضیحات کامل**: شامل محتویات و توضیحات هر آیتم
-- ⭐ **آیتم‌های محبوب**: نشان‌گذاری آیتم‌های ویژه
-- 📱 **طراحی ریسپانسیو**: سازگار با تمام اندازه‌های صفحه
-- 🎨 **طراحی مدرن**: استفاده از گرادیان‌ها و انیمیشن‌ها
+- 🍽️ **Complete Categorization**: Main dishes, drinks, and appetizers
+- 🖼️ **Beautiful Images**: Each menu item has an attractive image
+- 💰 **Pricing**: Formatted price display
+- 📝 **Complete Descriptions**: Includes ingredients and descriptions for each item
+- ⭐ **Popular Items**: Special marking for featured items
+- 📱 **Responsive Design**: Compatible with all screen sizes
+- 🎨 **Modern Design**: Uses gradients and animations
+- 🇹🇷 **Turkish Cuisine**: Authentic Turkish döner, kebap, and traditional dishes
 
-## نصب و اجرا
+## Installation and Setup
 
-1. وابستگی‌ها را نصب کنید:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. پروژه را اجرا کنید:
+2. Run the project:
 
 ```bash
 npm start
 ```
 
-3. در مرورگر به آدرس `http://localhost:3000` بروید.
+3. Open your browser and go to `http://localhost:3000`.
 
-## ساختار پروژه
+## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── menu-item.js          # کامپوننت آیتم منو
+│   ├── menu-item.js          # Menu item component
 │   ├── menu-item.css
-│   ├── menu-category.js      # کامپوننت دسته‌بندی
+│   ├── menu-category.js      # Category component
 │   ├── menu-category.css
-│   ├── restaurant-header.js  # هدر رستوران
+│   ├── restaurant-header.js  # Restaurant header
 │   └── restaurant-header.css
 ├── data/
-│   └── menu-data.js          # داده‌های منو
-├── App.js                    # کامپوننت اصلی
+│   └── menu-data.js          # Menu data
+├── App.js                    # Main component
 ├── App.css
-├── index.js                  # نقطه ورود
+├── index.js                  # Entry point
 └── index.css
 ```
 
-## سفارشی‌سازی
+## Customization
 
-برای اضافه کردن آیتم‌های جدید یا تغییر منو، فایل `src/data/menu-data.js` را ویرایش کنید.
+To add new items or modify the menu, edit the `src/data/menu-data.js` file.
 
-### ساختار آیتم منو:
+### Menu Item Structure:
 
 ```javascript
 {
   id: 'unique-id',
-  title: 'نام فارسی',
+  title: 'Turkish Name',
   titleEn: 'English Name',
-  image: 'URL تصویر',
-  ingredients: 'محتویات',
-  price: 450000, // قیمت به تومان
-  description: 'توضیحات',
-  isPopular: true // آیا محبوب است؟
+  image: 'Image URL',
+  ingredients: 'Ingredients',
+  price: 250, // Price in Turkish Lira (TL)
+  description: 'Description',
+  isPopular: true // Is it popular?
 }
 ```
 
-## تکنولوژی‌های استفاده شده
+## Technologies Used
 
 - React 18
 - CSS3 (Grid, Flexbox, Animations)
-- Unsplash API برای تصاویر
-- فونت Vazirmatn برای پشتیبانی از فارسی
+- Google Fonts (Playfair Display, Inter)
+- Custom Turkish restaurant styling
 
-## لایسنس
+## Restaurant Information
 
-این پروژه تحت لایسنس MIT منتشر شده است.
+**OSMANLI DÖNER VE KOKOREÇ** - Authentic Turkish döner, kebap, and traditional Turkish fast food specialties.
 
+## License
+
+This project is released under the MIT license.
