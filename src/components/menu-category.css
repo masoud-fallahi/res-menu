@@ -1,18 +1,19 @@
 .menu-category {
-  margin-bottom: 4rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+  background: #e0d4bd;
+  border-radius: 25px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(58, 77, 57, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(58, 77, 57, 0.1);
+  position: relative;
 }
 
 .category-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #e74c3c;
+  border-bottom: 3px solid #3a4d39;
   position: relative;
 }
 
@@ -22,24 +23,29 @@
   bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 80px;
   height: 3px;
-  background: #f39c12;
+  background: #8b4513;
+  border-radius: 2px;
 }
 
 .category-title {
-  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #3a4d39;
   margin-bottom: 0.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
 }
 
 .category-subtitle {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #8b4513;
+  font-weight: 400;
   font-style: italic;
+  letter-spacing: 0.3px;
 }
 
 .menu-items-grid {
@@ -52,17 +58,20 @@
 @media (max-width: 768px) {
   .menu-category {
     margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 15px;
+    padding: 1rem;
+    border-radius: 20px;
   }
 
   .category-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .category-subtitle {
+    font-size: 0.9rem;
   }
 
   .menu-items-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
-

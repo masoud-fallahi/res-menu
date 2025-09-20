@@ -81,7 +81,7 @@ export const menuData = {
           id: "kaşarli-tavuk-durum",
           title: "kaşarli tavuk dürüm",
           titleEn: "Chicken wrap with cheese",
-          image: "/kaşarli-tavuk-durum.jpg",
+          image: "/images/kaşarli-tavuk-durum.jpg",
           ingredients:
             "Chicken döner lavash bread and cheese, potatoes, pickles, tomatoes",
           price: 200,
@@ -102,7 +102,7 @@ export const menuData = {
           id: "tavuk-pilav-ustu-salata",
           title: "pilav üstüTavuk Döner + Salata",
           titleEn: "Chicken Doner Portion + Salad",
-          image: "/tavuk-pilav-ustu-salata.jpg",
+          image: "/images/tavuk-pilav-ustu-salata.jpg",
           ingredients: "Chicken döner plate with salad",
           price: 300,
           description:

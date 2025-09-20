@@ -128,3 +128,4 @@ After replacing all images:
 The menu will display properly once you replace the placeholder images with the actual cropped food images from the provided screenshots.
 
 
+

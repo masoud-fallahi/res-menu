@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSMANLI Logo Creator</title>
+  </head>
+  <body>
+    <canvas
+      id="logoCanvas"
+      width="200"
+      height="200"
+      style="border: 1px solid #ccc"
+    ></canvas>
+    <br /><br />
+    <button onclick="downloadLogo()">Download Logo as JPG</button>
+
+    <script>
+      const canvas = document.getElementById("logoCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Set background
+      ctx.fillStyle = "#e0d4bd";
+      ctx.fillRect(0, 0, 200, 200);
+
+      // Draw circle border
+      ctx.strokeStyle = "#3a4d39";
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.arc(100, 100, 96, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      // Draw döner kebab
+      const centerX = 100;
+      const centerY = 100;
+
+      // Vertical spit
+      ctx.strokeStyle = "#3a4d39";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(centerX, 30);
+      ctx.lineTo(centerX, 170);
+      ctx.stroke();
+
+      // Meat layers
+      ctx.fillStyle = "#3a4d39";
+      const layers = [
+        { y: 40, width: 16, height: 4 },
+        { y: 45, width: 24, height: 6 },
+        { y: 50, width: 32, height: 8 },
+        { y: 55, width: 36, height: 10 },
+        { y: 60, width: 40, height: 12 },
+        { y: 65, width: 44, height: 14 },
+        { y: 70, width: 48, height: 16 },
+        { y: 75, width: 44, height: 14 },
+        { y: 80, width: 40, height: 12 },
+        { y: 85, width: 36, height: 10 },
+        { y: 90, width: 32, height: 8 },
+        { y: 95, width: 28, height: 6 },
+        { y: 100, width: 24, height: 4 },
+        { y: 105, width: 20, height: 3 },
+        { y: 110, width: 16, height: 2 },
+      ];
+
+      layers.forEach((layer) => {
+        ctx.beginPath();
+        ctx.ellipse(
+          centerX,
+          layer.y,
+          layer.width / 2,
+          layer.height / 2,
+          0,
+          0,
+          2 * Math.PI
+        );
+        ctx.fill();
+      });
+
+      // Base plate
+      ctx.beginPath();
+      ctx.ellipse(centerX, 160, 60, 16, 0, 0, 2 * Math.PI);
+      ctx.fill();
+
+      // Add text
+      ctx.fillStyle = "#3a4d39";
+      ctx.font = "bold 18px Arial";
+      ctx.textAlign = "center";
+      ctx.fillText("OSMANLI", centerX, 125);
+
+      ctx.font = "12px Arial";
+      ctx.fillText("DONER VE KEBAP", centerX, 140);
+
+      function downloadLogo() {
+        const link = document.createElement("a");
+        link.download = "osmanli-logo.jpg";
+        link.href = canvas.toDataURL("image/jpeg", 0.9);
+        link.click();
+      }
+    </script>
+  </body>
+</html>

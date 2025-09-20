@@ -7,8 +7,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <RestaurantHeader />
       <main className="menu-container">
+        <RestaurantHeader />
         {menuData.categories.map((category) => (
           <MenuCategory key={category.id} category={category} />
         ))}

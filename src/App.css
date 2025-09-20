@@ -2,32 +2,69 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #3a4d39;
+  position: relative;
+}
+
+.App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(139, 69, 19, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(160, 82, 45, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
 }
 
 .menu-container {
   flex: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 3rem;
+  width: calc(100% - 4rem);
+  background: #e0d4bd;
+  border-radius: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 4rem);
 }
 
 .restaurant-footer {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
+  background: #3a4d39;
+  color: #e0d4bd;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .restaurant-footer p {
+  font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   opacity: 0.8;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
   .menu-container {
     padding: 1rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    border-radius: 30px;
   }
 }
-

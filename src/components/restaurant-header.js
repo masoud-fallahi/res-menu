@@ -5,12 +5,17 @@ const RestaurantHeader = () => {
   return (
     <header className="restaurant-header">
       <div className="header-content">
-        <h1 className="restaurant-name">OSMANLI DÖNER VE KOKOREÇ</h1>
-        <p className="restaurant-subtitle">Otantik Türk Lezzetleri</p>
-        <div className="header-decoration">
-          <div className="decoration-line"></div>
-          <span className="decoration-text">✦</span>
-          <div className="decoration-line"></div>
+        <div className="logo-container">
+          <div className="logo-circle">
+            <div className="doner-icon">
+              <img src="/logo.png" alt="OSMANLI Logo" className="logo-image" />
+            </div>
+          </div>
+        </div>
+        <h1 className="restaurant-name">Osmanli döner ve kokoreç</h1>
+        <div className="decorative-patterns">
+          <div className="pattern-left"></div>
+          <div className="pattern-right"></div>
         </div>
       </div>
     </header>

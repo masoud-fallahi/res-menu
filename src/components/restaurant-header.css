@@ -1,21 +1,10 @@
 .restaurant-header {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-  color: white;
+  background: transparent;
+  color: #3a4d39;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2rem 0 1rem 0;
   position: relative;
-  overflow: hidden;
-}
-
-.restaurant-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
+  margin-bottom: 1rem;
 }
 
 .header-content {
@@ -23,54 +12,134 @@
   z-index: 1;
 }
 
-.restaurant-name {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.restaurant-subtitle {
-  font-size: 1.2rem;
-  font-weight: 300;
-  opacity: 0.9;
+.logo-container {
   margin-bottom: 2rem;
 }
 
-.header-decoration {
+.logo-circle {
+  width: 140px;
+  height: 140px;
+  border: 4px solid #3a4d39;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: 0 6px 25px rgba(58, 77, 57, 0.3);
+}
+
+.doner-icon {
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
-.decoration-line {
-  width: 100px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #f39c12, transparent);
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.decoration-text {
-  font-size: 1.5rem;
-  color: #f39c12;
-  font-weight: bold;
+.logo-text {
+  text-align: center;
+}
+
+.logo-main {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3a4d39;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.logo-sub {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #3a4d39;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.restaurant-name {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3a4d39;
+  margin: 1.5rem 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.decorative-patterns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  pointer-events: none;
+}
+
+.pattern-left,
+.pattern-right {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 60px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,80 Q30,60 40,80 Q50,100 60,80 Q70,60 80,80" stroke="%23D4C4A8" stroke-width="2" fill="none"/><circle cx="30" cy="70" r="3" fill="%23D4C4A8"/><circle cx="50" cy="75" r="2" fill="%23D4C4A8"/><circle cx="70" cy="70" r="3" fill="%23D4C4A8"/></svg>')
+    no-repeat center;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+.pattern-left {
+  left: 20px;
+}
+
+.pattern-right {
+  right: 20px;
+  transform: scaleX(-1);
 }
 
 @media (max-width: 768px) {
   .restaurant-header {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .logo-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .doner-icon {
+    width: 70px;
+    height: 70px;
   }
 
   .restaurant-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin: 1rem 0 0 0;
   }
 
-  .restaurant-subtitle {
-    font-size: 1rem;
-  }
-
-  .decoration-line {
+  .pattern-left,
+  .pattern-right {
     width: 60px;
+    height: 45px;
+  }
+
+  .pattern-left {
+    left: 10px;
+  }
+
+  .pattern-right {
+    right: 10px;
   }
 }
-
