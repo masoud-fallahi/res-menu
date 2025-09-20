@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fix Broken Food Images</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-card { 
+            width: 300px; 
+            height: 200px; 
+            border: 3px solid #333;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .image-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--bg-color), var(--text-color));
+            opacity: 0.8;
+        }
+        .image-card .text {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filename {
+            font-size: 12px;
+            margin-top: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Fix Broken Food Images</h1>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Right-click on each image below</li>
+            <li>Select "Save image as..." or "Save picture as..."</li>
+            <li>Save it with the exact filename shown below each image</li>
+            <li>Save all images to the <code>public/images/</code> directory</li>
+            <li>This will replace the broken 29-byte files with proper placeholder images</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Et Dürüm</div>
+            <div class="filename">et-durum-doner.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #FFD700;">
+            <div class="text">Kaşarlı Tavuk</div>
+            <div class="filename">kasarlı-tavuk-durum.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #FFE4E1; --text-color: #8B0000;">
+            <div class="text">Menü 3 Et</div>
+            <div class="filename">menu-3-et.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Menü 3 Tavuk</div>
+            <div class="filename">menu-3-tavuk.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #FF8C00;">
+            <div class="text">Mercimek Çorbası</div>
+            <div class="filename">mercimek-corbasi.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Pilav + Döner</div>
+            <div class="filename">pilav-usti-doner-salata.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Pilav + Tavuk</div>
+            <div class="filename">pilav-usti-tavuk-doner-salata.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Sebzeli Kokoreç</div>
+            <div class="filename">sebzeli-kokorec.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Sebzeli Porsiyon</div>
+            <div class="filename">sebzeli-porsiyon-kokorec.jpg</div>
+        </div>
+    
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Tavuk Dürüm</div>
+            <div class="filename">tavuk-doner-durum.jpg</div>
+        </div>
+    
+    </div>
+    
+    <div class="instructions">
+        <h2>After saving all images:</h2>
+        <p>Run the application to verify that all images are now displaying properly!</p>
+    </div>
+</body>
+</html>

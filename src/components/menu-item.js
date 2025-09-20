@@ -3,14 +3,14 @@ import "./menu-item.css";
 
 const MenuItem = ({ item }) => {
   const formatPrice = (price) => {
-    return new Intl.NumberFormat("fa-IR").format(price) + " تومان";
+    return new Intl.NumberFormat("tr-TR").format(price) + " TL";
   };
 
   return (
     <div className="menu-item">
       <div className="menu-item-image">
         <img src={item.image} alt={item.title} />
-        {item.isPopular && <span className="popular-badge">محبوب</span>}
+        {item.isPopular && <span className="popular-badge">Popüler</span>}
       </div>
       <div className="menu-item-content">
         <div className="menu-item-header">
@@ -25,4 +25,3 @@ const MenuItem = ({ item }) => {
 };
 
 export default MenuItem;
-

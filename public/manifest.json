@@ -1,6 +1,6 @@
 {
-  "short_name": "منوی رستوران",
-  "name": "منوی رستوران با دسته‌بندی کامل",
+  "short_name": "OSMANLI MENÜ",
+  "name": "OSMANLI DÖNER VE KOKOREÇ - Otantik Türk Menüsü",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,4 +13,3 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
-

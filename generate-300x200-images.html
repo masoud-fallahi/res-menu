@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Image Generator - 300x200 pixels</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .image-container { 
+            text-align: center;
+        }
+        .food-image {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            background: linear-gradient(135deg, var(--bg-color), var(--text-color));
+            margin: 0 auto 10px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .filename {
+            font-size: 12px;
+            color: #666;
+            background: #f0f0f0;
+            padding: 5px;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin: 20px 0 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>🍽️ Food Image Generator - 300x200 pixels</h1>
+        <p><strong>Problem:</strong> Previous images were 1x1 pixels and unusable.</p>
+        <p><strong>Solution:</strong> Generate proper 300x200 pixel images for each food item.</p>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Right-click each 300x200 pixel image below</li>
+            <li>Select "Save image as..." or "Save picture as..."</li>
+            <li>Save with the exact filename shown below each image</li>
+            <li>Save all images to <code>public/images/</code> directory</li>
+            <li>This will replace the 1x1 pixel images with proper sized ones</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+<div class="section-title">Main Dishes</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>İskender + Salata</div>
+                <div style="font-size: 14px; margin-top: 5px;">270 TL</div>
+            </div>
+            <div class="filename">tereyagli-iskender-salata.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #CD853F; --text-color: #654321;">
+                <div>Döner + Salata</div>
+                <div style="font-size: 14px; margin-top: 5px;">350 TL</div>
+            </div>
+            <div class="filename">porsiyon-doner-salata.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #D2691E; --text-color: #654321;">
+                <div>Pilav + Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">380 TL</div>
+            </div>
+            <div class="filename">pilav-usti-doner-salata.jpg</div>
+        </div>
+      <div class="section-title">Döner Sandwiches</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>3 Çeyrek Et Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">300 TL</div>
+            </div>
+            <div class="filename">uceyrek-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Tombik Et Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">220 TL</div>
+            </div>
+            <div class="filename">tombik-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #CD853F; --text-color: #654321;">
+                <div>Sandviç Et Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">220 TL</div>
+            </div>
+            <div class="filename">sandvic-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Et Dürüm Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">230 TL</div>
+            </div>
+            <div class="filename">et-durum-doner.jpg</div>
+        </div>
+      <div class="section-title">Sides & Soups</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #FFD700; --text-color: #654321;">
+                <div>Patates Tava</div>
+                <div style="font-size: 14px; margin-top: 5px;">50 TL</div>
+            </div>
+            <div class="filename">patates-tava.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #FFA500; --text-color: #654321;">
+                <div>Patso</div>
+                <div style="font-size: 14px; margin-top: 5px;">50 TL</div>
+            </div>
+            <div class="filename">patso.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #FF8C00; --text-color: #654321;">
+                <div>Mercimek Çorbası</div>
+                <div style="font-size: 14px; margin-top: 5px;">100 TL</div>
+            </div>
+            <div class="filename">mercimek-corbasi.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #D2691E; --text-color: #654321;">
+                <div>Tavuk Çorbası</div>
+                <div style="font-size: 14px; margin-top: 5px;">100 TL</div>
+            </div>
+            <div class="filename">tavuk-corbasi.jpg</div>
+        </div>
+      <div class="section-title">Köfte & Kokoreç</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Köfte + Salata</div>
+                <div style="font-size: 14px; margin-top: 5px;">360 TL</div>
+            </div>
+            <div class="filename">porsiyon-kofte-salata.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Köfte Ekmek</div>
+                <div style="font-size: 14px; margin-top: 5px;">220 TL</div>
+            </div>
+            <div class="filename">kofte-ekmek.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #654321; --text-color: #654321;">
+                <div>Sebzeli Kokoreç</div>
+                <div style="font-size: 14px; margin-top: 5px;">230 TL</div>
+            </div>
+            <div class="filename">sebzeli-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Sade Yarım Kokoreç</div>
+                <div style="font-size: 14px; margin-top: 5px;">250 TL</div>
+            </div>
+            <div class="filename">sade-yarim-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #654321; --text-color: #654321;">
+                <div>Sade Porsiyon Kokoreç</div>
+                <div style="font-size: 14px; margin-top: 5px;">500 TL</div>
+            </div>
+            <div class="filename">sade-porsiyon-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Sebzeli Porsiyon Kokoreç</div>
+                <div style="font-size: 14px; margin-top: 5px;">450 TL</div>
+            </div>
+            <div class="filename">sebzeli-porsiyon-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Sucuk Ekmek</div>
+                <div style="font-size: 14px; margin-top: 5px;">220 TL</div>
+            </div>
+            <div class="filename">sucuk-ekmek.jpg</div>
+        </div>
+      <div class="section-title">Chicken Döner</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Tombik Tavuk Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">90 TL</div>
+            </div>
+            <div class="filename">tombik-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #CD853F; --text-color: #654321;">
+                <div>Sandviç Tavuk Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">90 TL</div>
+            </div>
+            <div class="filename">sandvic-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Tavuk Döner Dürüm</div>
+                <div style="font-size: 14px; margin-top: 5px;">100 TL</div>
+            </div>
+            <div class="filename">tavuk-doner-durum.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Soslu Tavuk Dürüm</div>
+                <div style="font-size: 14px; margin-top: 5px;">150 TL</div>
+            </div>
+            <div class="filename">soslu-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #CD853F; --text-color: #654321;">
+                <div>Zurna Tavuk Dürüm</div>
+                <div style="font-size: 14px; margin-top: 5px;">170 TL</div>
+            </div>
+            <div class="filename">zurna-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #FFD700; --text-color: #654321;">
+                <div>Kaşarlı Tavuk Dürüm</div>
+                <div style="font-size: 14px; margin-top: 5px;">200 TL</div>
+            </div>
+            <div class="filename">kasarlı-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Tam Ekmek Tavuk Döner</div>
+                <div style="font-size: 14px; margin-top: 5px;">170 TL</div>
+            </div>
+            <div class="filename">tam-ekmek-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Tavuk Döner Porsiyon + Salata</div>
+                <div style="font-size: 14px; margin-top: 5px;">250 TL</div>
+            </div>
+            <div class="filename">tavuk-doner-porsiyon-salata.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #D2691E; --text-color: #654321;">
+                <div>Pilav + Tavuk Döner + Salata</div>
+                <div style="font-size: 14px; margin-top: 5px;">300 TL</div>
+            </div>
+            <div class="filename">pilav-usti-tavuk-doner-salata.jpg</div>
+        </div>
+      <div class="section-title">Menus</div>
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B0000; --text-color: #654321;">
+                <div>Menü 1 Et</div>
+                <div style="font-size: 14px; margin-top: 5px;">330 TL</div>
+            </div>
+            <div class="filename">menu-1-et.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Menü 2 Et</div>
+                <div style="font-size: 14px; margin-top: 5px;">330 TL</div>
+            </div>
+            <div class="filename">menu-2-et.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Menü 3 Et</div>
+                <div style="font-size: 14px; margin-top: 5px;">350 TL</div>
+            </div>
+            <div class="filename">menu-3-et.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #8B4513; --text-color: #654321;">
+                <div>Menü 1 Tavuk</div>
+                <div style="font-size: 14px; margin-top: 5px;">250 TL</div>
+            </div>
+            <div class="filename">menu-1-tavuk.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #CD853F; --text-color: #654321;">
+                <div>Menü 2 Tavuk</div>
+                <div style="font-size: 14px; margin-top: 5px;">250 TL</div>
+            </div>
+            <div class="filename">menu-2-tavuk.jpg</div>
+        </div>
+      
+        <div class="image-container">
+            <div class="food-image" style="--bg-color: #A0522D; --text-color: #654321;">
+                <div>Menü 3 Tavuk</div>
+                <div style="font-size: 14px; margin-top: 5px;">270 TL</div>
+            </div>
+            <div class="filename">menu-3-tavuk.jpg</div>
+        </div>
+      
+    </div>
+    
+    <div class="instructions">
+        <h2>✅ After saving all images:</h2>
+        <p>Each food item will have a proper 300x200 pixel image. Then you can replace these with actual food images cropped from your menu screenshots.</p>
+    </div>
+</body>
+</html>

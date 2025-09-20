@@ -14,11 +14,10 @@ function App() {
         ))}
       </main>
       <footer className="restaurant-footer">
-        <p>رستوران سنتی ایرانی - تمامی حقوق محفوظ است</p>
+        <p>OSMANLI DÖNER VE KOKOREÇ - Tüm hakları saklıdır</p>
       </footer>
     </div>
   );
 }
 
 export default App;
-

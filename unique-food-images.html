@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unique Food Image Generator</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .image-card { 
+            width: 300px; 
+            height: 200px; 
+            border: 3px solid #333;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, var(--bg-color), var(--text-color));
+        }
+        .image-card .text {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-size: 12px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin: 20px 0 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>🎯 Unique Food Image Generator</h1>
+        <p><strong>Problem:</strong> All food items currently show the same 3 repeated images (burger, meatballs, döner plate).</p>
+        <p><strong>Solution:</strong> Generate unique colored placeholders for each food item, then replace with actual cropped images from menu screenshots.</p>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Right-click each unique colored image below</li>
+            <li>Save with the exact filename shown</li>
+            <li>Save all to <code>public/images/</code> directory</li>
+            <li>This will give each food item a unique visual identity</li>
+            <li>Later, replace these with actual food images from your menu screenshots</li>
+        </ol>
+    </div>
+<div class="section-title">Main Dishes</div><div class="container">
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">İskender</div>
+            <div class="filename">tereyagli-iskender-salata.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #CD853F;">
+            <div class="text">Döner + Salata</div>
+            <div class="filename">porsiyon-doner-salata.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F0E68C; --text-color: #D2691E;">
+            <div class="text">Pilav + Döner</div>
+            <div class="filename">pilav-usti-doner-salata.jpg</div>
+        </div>
+      </div><div class="section-title">Döner Sandwiches</div><div class="container">
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">3 Çeyrek Et</div>
+            <div class="filename">uceyrek-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Tombik Et</div>
+            <div class="filename">tombik-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #CD853F;">
+            <div class="text">Sandviç Et</div>
+            <div class="filename">sandvic-et-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Et Dürüm</div>
+            <div class="filename">et-durum-doner.jpg</div>
+        </div>
+      </div><div class="section-title">Sides & Soups</div><div class="container">
+        <div class="image-card" style="--bg-color: #FFFACD; --text-color: #FFD700;">
+            <div class="text">Patates Tava</div>
+            <div class="filename">patates-tava.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFE4B5; --text-color: #FFA500;">
+            <div class="text">Patso</div>
+            <div class="filename">patso.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFE4B5; --text-color: #FF8C00;">
+            <div class="text">Mercimek</div>
+            <div class="filename">mercimek-corbasi.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F0E68C; --text-color: #D2691E;">
+            <div class="text">Tavuk Çorba</div>
+            <div class="filename">tavuk-corbasi.jpg</div>
+        </div>
+      </div><div class="section-title">Köfte & Kokoreç</div><div class="container">
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Köfte + Salata</div>
+            <div class="filename">porsiyon-kofte-salata.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Köfte Ekmek</div>
+            <div class="filename">kofte-ekmek.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #D2B48C; --text-color: #654321;">
+            <div class="text">Sebzeli Kokoreç</div>
+            <div class="filename">sebzeli-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Sade Kokoreç</div>
+            <div class="filename">sade-yarim-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #D2B48C; --text-color: #654321;">
+            <div class="text">Sade Porsiyon</div>
+            <div class="filename">sade-porsiyon-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Sebzeli Porsiyon</div>
+            <div class="filename">sebzeli-porsiyon-kokorec.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Sucuk Ekmek</div>
+            <div class="filename">sucuk-ekmek.jpg</div>
+        </div>
+      </div><div class="section-title">Chicken Döner</div><div class="container">
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Tombik Tavuk</div>
+            <div class="filename">tombik-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #CD853F;">
+            <div class="text">Sandviç Tavuk</div>
+            <div class="filename">sandvic-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Tavuk Dürüm</div>
+            <div class="filename">tavuk-doner-durum.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Soslu Tavuk</div>
+            <div class="filename">soslu-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #CD853F;">
+            <div class="text">Zurna Tavuk</div>
+            <div class="filename">zurna-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFFACD; --text-color: #FFD700;">
+            <div class="text">Kaşarlı Tavuk</div>
+            <div class="filename">kasarlı-tavuk-durum.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Tam Ekmek</div>
+            <div class="filename">tam-ekmek-tavuk-doner.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Tavuk Porsiyon</div>
+            <div class="filename">tavuk-doner-porsiyon-salata.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F0E68C; --text-color: #D2691E;">
+            <div class="text">Pilav + Tavuk</div>
+            <div class="filename">pilav-usti-tavuk-doner-salata.jpg</div>
+        </div>
+      </div><div class="section-title">Meat Menus</div><div class="container">
+        <div class="image-card" style="--bg-color: #FFE4E1; --text-color: #8B0000;">
+            <div class="text">Menü 1 Et</div>
+            <div class="filename">menu-1-et.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Menü 2 Et</div>
+            <div class="filename">menu-2-et.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Menü 3 Et</div>
+            <div class="filename">menu-3-et.jpg</div>
+        </div>
+      </div><div class="section-title">Chicken Menus</div><div class="container">
+        <div class="image-card" style="--bg-color: #F5DEB3; --text-color: #8B4513;">
+            <div class="text">Menü 1 Tavuk</div>
+            <div class="filename">menu-1-tavuk.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #FFF8DC; --text-color: #CD853F;">
+            <div class="text">Menü 2 Tavuk</div>
+            <div class="filename">menu-2-tavuk.jpg</div>
+        </div>
+      
+        <div class="image-card" style="--bg-color: #DEB887; --text-color: #A0522D;">
+            <div class="text">Menü 3 Tavuk</div>
+            <div class="filename">menu-3-tavuk.jpg</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="instructions">
+        <h2>✅ After saving all images:</h2>
+        <p>Each food item will have a unique colored placeholder. Then you can replace these with actual food images cropped from your menu screenshots.</p>
+    </div>
+</body>
+</html>
