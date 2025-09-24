@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #3a4d39;
+  background: #6a040f;
   position: relative;
 }
 
@@ -33,7 +33,7 @@
   margin: 2rem auto;
   padding: 3rem;
   width: calc(100% - 4rem);
-  background: #e0d4bd;
+  background: #ccc;
   border-radius: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -43,8 +43,8 @@
 }
 
 .restaurant-footer {
-  background: #3a4d39;
-  color: #e0d4bd;
+  background: #6a040f;
+  color: #ccc;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;

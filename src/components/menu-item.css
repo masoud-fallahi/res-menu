@@ -1,5 +1,5 @@
 .menu-item {
-  background: #e0d4bd;
+  background: #ccc;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(58, 77, 57, 0.12),
@@ -38,7 +38,7 @@
   top: 12px;
   right: 12px;
   background: linear-gradient(45deg, #8b4513, #a0522d);
-  color: #e0d4bd;
+  color: #ccc;
   padding: 0.4rem 1rem;
   border-radius: 25px;
   font-size: 0.8rem;
@@ -76,7 +76,7 @@
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #3a4d39;
+  color: #6a040f;
   margin: 0;
   flex: 1;
   letter-spacing: 0.3px;
@@ -108,7 +108,7 @@
 .menu-item-description {
   font-family: "Inter", sans-serif;
   font-size: 0.95rem;
-  color: #3a4d39;
+  color: #6a040f;
   line-height: 1.6;
   margin: 0;
   opacity: 0.9;
@@ -131,7 +131,7 @@
 
   .menu-item-content {
     padding: 1rem;
-    background: #dfd8cc;
+    background: #e4e4e4;
   }
 
   .menu-item-image {
